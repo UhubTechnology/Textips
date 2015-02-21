@@ -50,7 +50,7 @@ end
 ########## GOOGLE WEB SEARCH #############
 
 def fetch_google(searchquery)
-google_url = 'https://www.googleapis.com/customsearch/v1?key=xxxxxxxxxx:yc-grkpdxou&q='
+google_url = 'https://www.googleapis.com/customsearch/v1?key=xxxxxxxxxx&q='
   query = "" + searchquery
   url = URI.encode(google_url + query)
   response = RestClient.get url
@@ -64,7 +64,7 @@ end
 ########## GOOGLE.FR WEB SEARCH #################
 
 def fetch_googlefr(searchquery)
-google_url = 'https://www.googleapis.com/customsearch/v1?key=xxxxxxxxx:yc-grkpdxou&googlehost=google.fr&lr=lang_fr&q='
+google_url = 'https://www.googleapis.com/customsearch/v1?key=xxxxxxxxx&googlehost=google.fr&lr=lang_fr&q='
   query = "" + searchquery
   url = URI.encode(google_url + query)
   response = RestClient.get url
