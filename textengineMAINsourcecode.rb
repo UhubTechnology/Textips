@@ -44,7 +44,7 @@ end
 end
 
 def fetch_google(searchquery)
-google_url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&l&cx=002811237597949708617:yc-grkpdxou&q='
+google_url = 'https://www.googleapis.com/customsearch/v1?key=xxxxxxxxx&l&cx=002811237597949708617:yc-grkpdxou&q='
   query = "" + searchquery
   url = URI.encode(google_url + query)
   response = RestClient.get url
@@ -56,7 +56,7 @@ return cleaned.gsub("<b>","").gsub("</b>","").gsub("&quot;","\"").gsub("&amp;","
 end
 
 def fetch_wiki(searchquery)
-google_url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&l&cx=002811237597949708617:yc-grkpdxou&googlehost=google.com&lr=lang_en&q='
+google_url = 'https://www.googleapis.com/customsearch/v1?key=xxxxx&l&cx=002811237597949708617:yc-grkpdxou&googlehost=google.com&lr=lang_en&q='
   query = "" + searchquery
   url = URI.encode(google_url + query)
   response = RestClient.get url
@@ -69,7 +69,7 @@ end
 
 
 def fetch_googlefr(searchquery)
-google_url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&l&cx=002811237597949708617:yc-grkpdxou&googlehost=google.fr&lr=lang_fr&q='
+google_url = 'https://www.googleapis.com/customsearch/v1?key=xxxxxxx&l&cx=002811237597949708617:yc-grkpdxou&googlehost=google.fr&lr=lang_fr&q='
   query = "" + searchquery
   url = URI.encode(google_url + query)
   response = RestClient.get url
@@ -81,7 +81,7 @@ return cleaned.gsub("<b>","").gsub("</b>","").gsub("&quot;","\"").gsub("&amp;","
 end
 
 def fetch_googlees(searchquery)
-google_url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&l&cx=002811237597949708617:yc-grkpdxou&googlehost=google.es&lr=lang_es&q='
+google_url = 'https://www.googleapis.com/customsearch/v1?key=xxxxxxxx&l&cx=002811237597949708617:yc-grkpdxou&googlehost=google.es&lr=lang_es&q='
   query = "" + searchquery
   url = URI.encode(google_url + query)
   response = RestClient.get url
@@ -93,7 +93,7 @@ return cleaned.gsub("<b>","").gsub("</b>","").gsub("&quot;","\"").gsub("&amp;","
 end
 
 def fetch_googlept(searchquery)
-google_url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&l&cx=002811237597949708617:yc-grkpdxou&lr=lang_pt&q='
+google_url = 'https://www.googleapis.com/customsearch/v1?key=xxxxxxx&l&cx=002811237597949708617:yc-grkpdxou&lr=lang_pt&q='
   query = "" + searchquery
   url = URI.encode(google_url + query)
   response = RestClient.get url
@@ -105,7 +105,7 @@ return cleaned.gsub("<b>","").gsub("</b>","").gsub("&quot;","\"").gsub("&amp;","
 end
 
 def fetch_definefr(searchquery)
-google_url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&l&cx=002811237597949708617:yc-grkpdxou&googlehost=google.fr&lr=lang_fr&q='
+google_url = 'https://www.googleapis.com/customsearch/v1?key=xxxxx&l&cx=002811237597949708617:yc-grkpdxou&googlehost=google.fr&lr=lang_fr&q='
   query = "" + searchquery
   url = URI.encode(google_url + query)
   response = RestClient.get url
@@ -117,7 +117,7 @@ return cleaned.gsub("<b>","").gsub("</b>","").gsub("&quot;","\"").gsub("&amp;","
 end
 
 def fetch_definees(searchquery)
-google_url = 'https://www.googleapis.com/customsearch/v1?key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&l&cx=002811237597949708617:yc-grkpdxou&googlehost=google.es&lr=lang_es&q='
+google_url = 'https://www.googleapis.com/customsearch/v1?key=xxxxxxx&l&cx=002811237597949708617:yc-grkpdxou&googlehost=google.es&lr=lang_es&q='
   query = "" + searchquery
   url = URI.encode(google_url + query)
   response = RestClient.get url
@@ -129,7 +129,7 @@ return cleaned.gsub("<b>","").gsub("</b>","").gsub("&quot;","\"").gsub("&amp;","
 end
 
 def fetch_define(searchquery)
-define_url = 'http://readability.com/api/content/v1/parser?token=3350b34c61f1ecdcd3fcd5ea0a95f8e64e71b604&url=https://www.google.com/search?q='
+define_url = 'http://readability.com/api/content/v1/parser?token=xxxxxxx&url=https://www.google.com/search?q='
   query = "" + searchquery
   url = URI.encode(define_url + query)
   response = RestClient.get url
@@ -141,7 +141,7 @@ return cleaned.gsub(/\d\s?/, "").gsub("noun"," noun: ").gsub("verb"," verb: ").g
 end
 
 def fetch_flight(searchquery)
-flight_url = 'http://readability.com/api/content/v1/parser?token=3350b34c61f1ecdcd3fcd5ea0a95f8e64e71b604&url=https://www.google.com/search?q='
+flight_url = 'http://readability.com/api/content/v1/parser?token=xxxxxx&url=https://www.google.com/search?q='
   query = "" + searchquery
   url = URI.encode(flight_url + query)
   response = RestClient.get url
@@ -153,7 +153,7 @@ return cleaned.gsub("Dec"," Dec ").gsub("Nov"," Nov ").gsub("Oct"," Oct ").gsub(
 end
 
 def fetch_time(searchquery)
-time_url = 'http://readability.com/api/content/v1/parser?token=3350b34c61f1ecdcd3fcd5ea0a95f8e64e71b604&url=https://www.google.com/search?q='
+time_url = 'http://readability.com/api/content/v1/parser?token=xxxxxxx&url=https://www.google.com/search?q='
   query = "" + searchquery
   url = URI.encode(time_url + query)
   response = RestClient.get url
@@ -329,13 +329,13 @@ say "For directions, enter  'origin=address1&destination=address2'. Don't insert
 elsif ($currentCall.initialText[/\d{5}/] && (!$currentCall.initialText[/Origin/] && !$currentCall.initialText[/origin/] && !$currentCall.initialText[/weather/] && !$currentCall.initialText[/Weather/] && !$currentCall.initialText[/estination/]  && !$currentCall.initialText[/movies/]  && !$currentCall.initialText[/Movies/]))
 say "Check spelling if no results follow. Or, try 'web #{$currentCall.initialText}'"
 log "ttttttttttttt #{$currentCall.initialText}";
-places_url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?sensor=false&key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&query='
+places_url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?sensor=false&key=xxxxxxxxx&query='
 purl = URI.encode(places_url + "" + $currentCall.initialText.gsub("Phone","").gsub("phone","").gsub("address","").gsub("Address",""))
 pinfo = JSON.parse(RestClient.get purl)
 reference0 = "#{pinfo['results'][0]['reference']}"
 reference1 = "#{pinfo['results'][1]['reference']}"
 reference2 = "#{pinfo['results'][2]['reference']}"
-phone_url = 'https://maps.googleapis.com/maps/api/place/details/json?sensor=false&key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&reference='
+phone_url = 'https://maps.googleapis.com/maps/api/place/details/json?sensor=false&key=xxxxxxx&reference='
 phurl0 = URI.encode(phone_url + "" + reference0)
 phurl1 = URI.encode(phone_url + "" + reference1)
 phurl2 = URI.encode(phone_url + "" + reference2)
@@ -349,13 +349,13 @@ say "3. #{pinfo['results'][2]['formatted_address']}, #{pinfo['results'][2]['name
 elsif ($currentCall.initialText[/([a-zA-Z]\d[a-zA-z]( )?\d[a-zA-Z]\d)/] && (!$currentCall.initialText[/Origin/] && !$currentCall.initialText[/origin/] && !$currentCall.initialText[/weather/] && !$currentCall.initialText[/Weather/] && !$currentCall.initialText[/estination/]  && !$currentCall.initialText[/movies/]  && !$currentCall.initialText[/Movies/]))
 say "Check spelling if no results follow. Or, try 'web #{$currentCall.initialText}'"
 log "ttttttttttttt #{$currentCall.initialText}";
-places_url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?sensor=false&key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&query='
+places_url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?sensor=false&key=xxxxx&query='
 purl = URI.encode(places_url + "" + $currentCall.initialText.gsub("Phone","").gsub("phone","").gsub("address","").gsub("Address",""))
 pinfo = JSON.parse(RestClient.get purl)
 reference0 = "#{pinfo['results'][0]['reference']}"
 reference1 = "#{pinfo['results'][1]['reference']}"
 reference2 = "#{pinfo['results'][2]['reference']}"
-phone_url = 'https://maps.googleapis.com/maps/api/place/details/json?sensor=false&key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&reference='
+phone_url = 'https://maps.googleapis.com/maps/api/place/details/json?sensor=false&key=xxxxxxxxx&reference='
 phurl0 = URI.encode(phone_url + "" + reference0)
 phurl1 = URI.encode(phone_url + "" + reference1)
 phurl2 = URI.encode(phone_url + "" + reference2)
@@ -369,13 +369,13 @@ say "3. #{pinfo['results'][2]['formatted_address']}, #{pinfo['results'][2]['name
 elsif ($currentCall.initialText[/phone/] || $currentCall.initialText[/Phone/])
 say "Check spelling if no results follow. Or, try 'web #{$currentCall.initialText}'";
 log "ttttttttttttt #{$currentCall.initialText}";
-places_url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?sensor=false&key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&query='
+places_url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?sensor=false&key=xxxxxxxxxxxx&query='
 purl = URI.encode(places_url + "" + $currentCall.initialText.gsub("Phone","").gsub("phone","").gsub("address","").gsub("Address",""))
 pinfo = JSON.parse(RestClient.get purl)
 reference0 = "#{pinfo['results'][0]['reference']}"
 reference1 = "#{pinfo['results'][1]['reference']}"
 reference2 = "#{pinfo['results'][2]['reference']}"
-phone_url = 'https://maps.googleapis.com/maps/api/place/details/json?sensor=false&key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&reference='
+phone_url = 'https://maps.googleapis.com/maps/api/place/details/json?sensor=false&key=xxxxxxxxx&reference='
 phurl0 = URI.encode(phone_url + "" + reference0)
 phurl1 = URI.encode(phone_url + "" + reference1)
 phurl2 = URI.encode(phone_url + "" + reference2)
@@ -389,13 +389,13 @@ say  "3. #{pinfo['results'][2]['formatted_address']}, #{pinfo['results'][2]['nam
 elsif ($currentCall.initialText[/address/] || $currentCall.initialText[/Address/])
 say "Check spelling if no results follow. Or, try 'web #{$currentCall.initialText}'";
 log "ttttttttttttt #{$currentCall.initialText}";
-places_url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?sensor=false&key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&query='
+places_url = 'https://maps.googleapis.com/maps/api/place/textsearch/json?sensor=false&key=xxxxxxxxxx&query='
 purl = URI.encode(places_url + "" + $currentCall.initialText.gsub("Phone","").gsub("phone","").gsub("address","").gsub("Address",""))
 pinfo = JSON.parse(RestClient.get purl)
 reference0 = "#{pinfo['results'][0]['reference']}"
 reference1 = "#{pinfo['results'][1]['reference']}"
 reference2 = "#{pinfo['results'][2]['reference']}"
-phone_url = 'https://maps.googleapis.com/maps/api/place/details/json?sensor=false&key=AIzaSyCnoQMMus8nEs6hn6tAJJgIj01FDCrBw-A&reference='
+phone_url = 'https://maps.googleapis.com/maps/api/place/details/json?sensor=false&key=xxxxx&reference='
 phurl0 = URI.encode(phone_url + "" + reference0)
 phurl1 = URI.encode(phone_url + "" + reference1)
 phurl2 = URI.encode(phone_url + "" + reference2)
@@ -472,7 +472,7 @@ forecast = JSON.parse(info)
 say "#{$currentCall.initialText}: #{forecast["forecast"]["txt_forecast"]["forecastday"][0]["title"]}: #{forecast["forecast"]["txt_forecast"]["forecastday"][0]["fcttext_metric"]}"; log "ttttttttttttt #{$currentCall.initialText}"; say "#{$currentCall.initialText}: #{forecast["forecast"]["txt_forecast"]["forecastday"][1]["title"]}: #{forecast["forecast"]["txt_forecast"]["forecastday"][1]["fcttext_metric"]}"; log "ttttttttttttt #{$currentCall.initialText}"; say "#{$currentCall.initialText}: #{forecast["forecast"]["txt_forecast"]["forecastday"][2]["title"]}: #{forecast["forecast"]["txt_forecast"]["forecastday"][2]["fcttext_metric"]}"; log "ttttttttttttt #{$currentCall.initialText}"; log "nnnnnnnnnnnnnnnnnnnnn #{$currentCall.callerID}"; 
 
 elsif ($currentCall.initialText[/\d{5}/] && ($currentCall.initialText[/weather/] || $currentCall.initialText[/Weather/]))
-weather_url = "http://api.wunderground.com/api/50085c7dadfca6a0/forecast/q/"
+weather_url = "http://api.wunderground.com/api/xxxxxxxxxxx/forecast/q/"
 urlq = URI.encode(weather_url + "" + $currentCall.initialText.gsub("Weather ","").gsub("weather ","") + ".json")
 uri = URI(urlq)
 info = Net::HTTP.get(uri)
